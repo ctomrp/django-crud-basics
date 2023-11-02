@@ -1,0 +1,26 @@
+#crear proyecto
+django-admin startproject nombreProyecto(project)
+
+#ejecutar servidor
+python manage.py runserver
+
+#crear migraciones, se puede hacer para todo o para una app especifica
+pythom manage.py makemigrations
+pythom manage.py makemigrations favoritos
+
+#ejecutar migraciones, se puede hacer para todo o para una app especifica
+python manage.py migrate
+
+#para ver el sql creado en la migracion
+python manage.py sqlmigrate nombreApp numeroMigrations
+python manage.py sqlmigrate favoritos 0001
+
+#crear super usuario
+python manage.py createsuperuser
+
+#crear aplicacion (recuerda agregarla al settings en installed apps)
+django-admin startapp nombreAplicacion
+
+#check si hay problema con el proyecto
+python manage.py check
+

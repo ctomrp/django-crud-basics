@@ -1,0 +1,20 @@
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favoritos</title>
+    <link href=" {% static 'bs532/css/bootstrap.min.css' %}" rel="stylesheet">
+    {% block extra_css %}
+    {% endblock %}
+  </head>
+  <body>
+    {% block main %}
+    {% endblock %}
+    <script src="{% static 'bs532/js/bootstrap.bundle.min.js' %}"></script>
+    {% block extra_js %}
+    {% endblock %}
+  </body>
+</html>
